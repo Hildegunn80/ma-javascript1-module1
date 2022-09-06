@@ -39,8 +39,8 @@ const addSubHeading = document.querySelector("h3");
 
  //Question 5//
 
- const paragraphs = document.querySelectorAll("p");
-    paragraphs.style.color="red";
+ const paragraphs= document.querySelectorAll("p");
+    paragraphs.style.textcolor ="red";
 
 
 
