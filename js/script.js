@@ -52,12 +52,12 @@ resultsContainer.style.background = "Yellow";
 //Create a function that has one parameter called list.
 //Inside the function, loop through the list parameter and console log the name property in each object.
 //Call the function and pass in the cats variable in the script.js file in the repo.
-function quest7(list) {
+function logCatNames(list) {
     for (let i=0;i<list.length;i++) {
         console.log("Name: " + list[i].name );
     }
 }
-quest7(cats);
+logCatNames(cats);
 
 // Question 8:
 // Create a function called createCats. The function will have one parameter called cats.
@@ -74,7 +74,7 @@ function createCats(cats) {
 
         HTML += "<p>";
         let age = cats[i].age;
-        if(age == undefined) age = "Age unknown";
+        if(age === undefined) age = "Age unknown";
         HTML += age;
         HTML += "</p>";
 
