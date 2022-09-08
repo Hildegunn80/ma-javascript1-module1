@@ -59,6 +59,15 @@ resultsContainer.innerHTML="<p>New paragraph</p>";
 
 //Question 8:
 //Create a function called createCats. The function will have one parameter called cats.
+
+createCats.forEach(cats)=>{
+    cats.innerHTML= <div>
+                        <h5>{cats.name}</h5>
+                        <p>{cats.age}</p>
+                      </div>;
+}
+createCats()
+
 //Inside the function loop through the value passed in as cats and create HTML for each object in the array.
 //Wrap each item in a div, each name property in an h5 tag and each age property in a p tag.
 //If the age property is missing, it should display “Age unknown” instead.
