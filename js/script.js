@@ -59,25 +59,41 @@ function quest7(list) {
 }
 quest7(cats);
 
-//Question 8:
-//Create a function called createCats. The function will have one parameter called cats.
+// Question 8:
+// Create a function called createCats. The function will have one parameter called cats.
 
-/*
 function createCats(cats) {
-    for (let i=0;i<cats.length;i++) {
-        cats[i].innerHTML= "<div><h5>{"cats.name}</h5><p>{cats.age}</p></div>";
+    let HTML = "";
+
+    for (let i=0; i<cats.length; i++) {
+        HTML += "<div>";
+
+        HTML += "<h5>";
+        HTML += cats[i].name;
+        HTML += "</h5>";
+
+        HTML += "<p>";
+        let age = cats[i].age;
+        if(age == undefined) age = "Age unknown";
+        HTML += age;
+        HTML += "</p>";
+
+        HTML += "</div>\n";
     }
+
+    return HTML;
 }
 
-createCats(cats);
-*/
+const catContainer = document.querySelector(".cat-container");
+catContainer.innerHTML = createCats(cats);
 
-//Inside the function loop through the value passed in as cats and create HTML for each object in the array.
 
-//Wrap each item in a div, each name property in an h5 tag and each age property in a p tag.
-//If the age property is missing, it should display “Age unknown” instead.
+// Inside the function loop through the value passed in as cats and create HTML for each object in the array.
 
-//Return the HTML from the function.
-//Call the function and pass in the cats array as the argument.
+// Wrap each item in a div, each name property in an h5 tag and each age property in a p tag.
+// If the age property is missing, it should display “Age unknown” instead.
 
-//Assign the return value of the function to the innerHTML property of the element on the HTML page with a class of cat-container.
+// Return the HTML from the function.
+// Call the function and pass in the cats array as the argument.
+
+// Assign the return value of the function to the innerHTML property of the element on the HTML page with a class of cat-container.
