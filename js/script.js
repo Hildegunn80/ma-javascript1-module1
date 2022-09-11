@@ -75,7 +75,7 @@ function createCats(cats) {
 
         HTML += "<p>";
         let age = cat.age;
-        //if(age === undefined) age = "Age unknown";
+        if(age === undefined) age = "Age unknown";
         HTML += age;
         HTML += "</p>";
 
